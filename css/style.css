@@ -1,1 +1,38 @@
+/* 盤を 3×4 グリッドで表示 */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 2px;
+  margin: 1rem auto;
+  width: max-content;
+  border: 4px solid #654321;
+}
 
+/* 各マス */
+.square {
+  background: #f3d9b1;      /* 木目っぽい色 */
+  position: relative;
+}
+
+/* 駒画像 */
+.piece {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s;
+}
+
+.piece.selected {
+  outline: 3px solid #ff7f00;
+  transform: scale(1.05);
+}
+
+/* 手番ラベル */
+#turn-info {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
