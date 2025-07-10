@@ -52,6 +52,6 @@ function render(){
       boardEl.appendChild(sq);
     }
   }
-  turnInfo.textContent = turn===0 ? "先手の番です 🦁" : "後手の番です 🐧";
+  turnInfo.textContent = turn===0 ? "先手の番です。" : "後手の番です。";
 }
 
