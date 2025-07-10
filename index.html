@@ -1,12 +1,21 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>My First GitHub Page</title>
+  <meta charset="UTF-8" />
+  <title>どうぶつしょうぎ</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <p>This is my first website published from GitHub.</p>
+  <main>
+    <h1>どうぶつしょうぎ</h1>
+    <!-- 盤 -->
+    <div id="board"></div>
+
+    <!-- 手番表示 -->
+    <p id="turn-info">先手の番です 🦁</p>
+  </main>
+
+  <!-- ゲームロジック & UI -->
+  <script type="module" src="js/ui.js"></script>
 </body>
 </html>
